@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
+		<title>Essence</title>
+		<link rel="stylesheet" href="style.css" />
+		<link rel="icon" type="image/x-icon" href="/static/favicon.png">
+	</head>
+	<body>
+		<div class="landing" id="landing">
+			<video src="./static/background-video.mp4" class="video-desktop" muted loop autoplay></video>
+			<video src="https://lbdvideos.s3.ap-southeast-2.amazonaws.com/ESSENCE_RENDER_VIDEO_1080x1920_01.mp4" class="video-mobile" muted loop autoplay></video>
+
+			<div class="landing__title">
+				<img src="/static/logo.png" alt="" />
+			</div>
+			<div class="landing__main-logo">
+				<img src="/static/main-logo.png" alt="" />
+			</div>
+			<div class="landing__subtitle">
+				<div class="landing__subtitle__title">Luxury Redefined.</div>
+				<div>
+					<br />
+					<br />
+					<br />
+					Michael Ryan <br /> <a href="tel:+0400 676 403">0400 676 403</a>&nbsp;|&nbsp;<a href="mailto:michael.ryan@kervale.com">michael.ryan@kervale.com</a><br /> 
+				</div>
+			</div>
+
+			<div class="landing__buttons">
+				<a href="https://www.realestate.com.au/project/essence-brighton-600033546" target="_blank">Details</a>
+				<a href="https://kervale.com">Kervale</a>
+				<a href="/" id="contact-btn">Contact us</a>
+			</div>
+		</div>
+		<div class="contact" id="contact">
+			<div class="contact__close" id="close-btn">Close</div>
+			<div class="contact__title">Register your interest.</div>
+			<form action="https://formspree.io/f/xvolkbnr" class="contact__form" method="POST">
+				<input name="first_name" type="text" placeholder="First name" required />
+				<input name="last_name" type="text" placeholder="Last name" required />
+				<input name="_replyto" type="email" placeholder="Email" required />
+				<input name="phone" type="tel" placeholder="Phone" required />
+				<input name="interested_in" type="text" placeholder="Interested in" required />
+				<input name="message" type="text" placeholder="I'd like to" required />
+				<button type="submit">Submit</button>
+			</form>
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html>
