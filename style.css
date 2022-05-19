@@ -86,8 +86,18 @@ body {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   font-size: 10px;
-  overflow-x: hidden;
-  overflow-y: auto;
+}
+
+.column {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .landing__subtitle__title {
